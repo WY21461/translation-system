@@ -29,5 +29,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/translation-review:latest
-            ghcr.io/${{ github.repository_owner }}/translation-review:${{ github.sha }}
+            ghcr.io/wy21461/translation-review:latest
+
