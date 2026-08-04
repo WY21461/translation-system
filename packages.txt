@@ -1,0 +1,5 @@
+# 供 Render 构建时安装 Tesseract OCR 系统包
+# 如果不需要 OCR 功能，可移除此文件并将 requirements.txt 中的 pytesseract 删除
+
+#!/bin/bash
+apt-get update && apt-get install -y tesseract-ocr tesseract-ocr-eng

@@ -1,0 +1,20 @@
+# 多模型协作翻译与审校系统 — 简约中文UI
+# 面板 #F7F8FC / 主区域 #FFFFFF / 主色 #2B6FF2
+# 成功 #16A34A / 错误 #DC2626 / 边框 #E5E7EB
+# 正文 #1E1F2B / 次要 #6B7280
+
+[theme]
+base = "light"
+primaryColor = "#2B6FF2"
+backgroundColor = "#F7F8FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1E1F2B"
+font = "sans serif"
+
+[server]
+headless = true
+enableXsrfProtection = false
+maxUploadSize = 50
+
+[browser]
+gatherUsageStats = false
