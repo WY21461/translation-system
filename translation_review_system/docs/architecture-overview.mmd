@@ -1,0 +1,28 @@
+flowchart TD
+    U["用户输入 文本 文档 图片"] --> UI["Streamlit 界面"]
+    UI --> PRE["输入预处理"]
+    PRE --> C["复杂度评估"]
+    C --> R["路由决策"]
+    R --> A["模型 A 翻译"]
+    R --> B["模型 B 翻译"]
+    A --> M["调用统计中间件"]
+    B --> M
+    A --> S["规则评分器"]
+    B --> S
+    S --> RA["审校子 Agent"]
+    RA --> BEST["推荐最佳译文"]
+    BEST --> OUT["对比表 评分表 修改建议"]
+    UI --> DOC["Markdown 批量翻译"]
+    DOC --> BEST
+    UI --> OCR["OCR 图片文字提取"]
+    OCR --> PRE
+
+    classDef input fill:#e7f5ff,stroke:#1c7ed6,stroke-width:1px
+    classDef core fill:#fff4e6,stroke:#f08c00,stroke-width:1px
+    classDef model fill:#f3f0ff,stroke:#7048e8,stroke-width:1px
+    classDef output fill:#ebfbee,stroke:#2b8a3e,stroke-width:1px
+
+    class U,UI input
+    class PRE,C,R,S,RA,DOC,OCR core
+    class A,B,M model
+    class BEST,OUT output

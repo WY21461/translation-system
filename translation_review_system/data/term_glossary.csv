@@ -1,0 +1,23 @@
+source_term,target_term,domain
+artificial intelligence,人工智能,technology
+large language model,大语言模型,technology
+machine learning,机器学习,technology
+reinforcement learning,强化学习,technology
+neural network,神经网络,technology
+transformer,Transformer,technology
+cloud computing,云计算,technology
+data privacy,数据隐私,technology
+encryption,加密,technology
+clinical diagnosis,临床诊断,medicine
+diabetes,糖尿病,medicine
+mitochondria,线粒体,biology
+immune response,免疫反应,medicine
+supply chain,供应链,business
+risk management,风险管理,business
+customer churn,客户流失,business
+carbon neutrality,碳中和,environment
+quantum computing,量子计算,technology
+contract,合同,law
+liability,责任,law
+gross domestic product,国内生产总值,economics
+inflation,通货膨胀,economics
